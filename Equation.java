@@ -9,16 +9,16 @@ public class Equation {
         double a = readNumber("Введите значение а: ");
         double b = readNumber("Введите значение b: ");
         double c = readNumber("Введите значение с: ");
-        double D = calc(a, b, c);
-        answer(D);
+        double D = calculate(a, b, c);
+        printAnswer(D);
     }
 
-    private static double calc(double a, double b, double c) {
+    private static double calculate(double a, double b, double c) {
         double D = Math.pow(b, 2) - 4 * a * c;
         return D;
     }
 
-    private static void answer(double D) {
+    private static void printAnswer(double D) {
         if (D >= 0) {
             System.out.println("Ответ:" + D);
         }
